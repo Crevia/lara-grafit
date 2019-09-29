@@ -1,0 +1,14 @@
+{
+    "name": "crevia/lara-grafit",
+    "description": "The is a laravel framework packaged together with grafit",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Crevia",
+            "email": "crevia12@yahoo.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
