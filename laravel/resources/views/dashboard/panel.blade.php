@@ -8,6 +8,9 @@
     <a class="nav-link" href="{!! url('teams') !!}"><span class="fas fa-users"></span> Teams</a>
 </li>
 @if (Gate::allows('admin'))
+    <li><a href="{!! url('user/notifications') !!}"><span class="fa fa-envelope-o"></span> Notifications</a></li>
+    <li><a href="{!! url('admin/notifications') !!}"><span class="fa fa-envelope-o"></span> Notifications</a></li>
+    <li><a href="{!! url('admin/queue') !!}"><span class="fa fa-list"></span> Queue</a></li>
     <li class="sidebar-header"><span>Admin</span></li>
     <li class="nav-item @if(Request::is('admin/dashboard', 'admin/dashboard/*')) active @endif">
         <a class="nav-link" href="{!! url('admin/dashboard') !!}"><span class="fas fa-tachometer-alt"></span> Dashboard</a>
