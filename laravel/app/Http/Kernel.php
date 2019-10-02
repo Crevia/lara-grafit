@@ -64,5 +64,7 @@ class Kernel extends HttpKernel
         'permissions' => \App\Http\Middleware\Permissions::class,
         'roles' => \App\Http\Middleware\Roles::class,
        'active' => \App\Http\Middleware\Active::class, //for email activations used by grafite
+       'jwt.auth' => 'Tymon\JWTAuth\Middleware\GetUserFromToken',
+	    'jwt.refresh' => 'Tymon\JWTAuth\Middleware\RefreshToken',
     ];
 }
